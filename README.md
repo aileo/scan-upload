@@ -13,7 +13,7 @@ This middleware parse the request payload using Content-Type multipart/form-data
 #### scan
 
 The `clamdscan` part of clamscan's options as described [here](https://www.npmjs.com/package/clamscan#getting-started).
-The rest of the clamscan's options are not exposed as [it will not be used](https://www.npmjs.com/package/clamscan#getting-started)
+The rest of the clamscan's options are not exposed as [it will not be used](https://www.npmjs.com/package/clamscan#a-note-about-using-this-module-via-sockets-or-tcp)
 
 #### files
 
