@@ -1,0 +1,26 @@
+version: '3.9'
+services:
+  clamav:
+    image: mkodockx/docker-clamav:latest
+    logging:
+      driver: none
+    networks:
+      - scan-upload
+    healthcheck:
+      test: ['CMD', './check.sh']
+      interval: 60s
+      retries: 3
+      start_period: 120s
+  server:
+    build: .
+    tty: true
+    networks:
+      - scan-upload
+    volumes:
+      - ../:/app/
+    depends_on:
+      - clamav
+
+networks:
+  scan-upload:
+    driver: bridge

@@ -1,0 +1,10 @@
+node_modules/
+.nyc_output/
+.vscode/
+dev/
+test/
+.babelrc
+.nycrc
+nodemon.json
+.prettierrc.yaml
+.eslintrc.yml

@@ -1,0 +1,13 @@
+{
+  "extends": "@istanbuljs/nyc-config-babel",
+  "exclude": [
+    "test/**",
+    "dist/**"
+  ],
+  "include": [
+    "src/**"
+  ],
+  "check-coverage": false,
+  "skip-full": false,
+  "reporter": []
+}
